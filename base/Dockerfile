@@ -15,5 +15,6 @@ WORKDIR /home/root
 
 RUN curl -L https://get.oh-my.fish > install_omf \ 
     && chmod +x install_omf \
-    && fish -c './install_omf --noninteractive -y'
+    && fish -c './install_omf --noninteractive -y' \
+    && rm -rf ./install_omf
 
