@@ -19,3 +19,6 @@ RUN curl -L https://get.oh-my.fish > install_omf \
     && fish -c './install_omf --noninteractive -y' \
     && rm -rf ./install_omf
 
+ENTRYPOINT [ "/usr/bin/env", "fish" ]
+CMD []
+
